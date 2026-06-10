@@ -40,7 +40,7 @@ async function triggerRawBTPrint(
     const barisWaktu = timeStr + ' '.repeat(Math.max(sisa, 1)) + dateStr
 
     let struk = ''
-    struk += center('PT INTERSKALA MANDIRI INDONESIA') + '\n'
+    // struk += center('PT INTERSKALA MANDIRI INDONESIA') + '\n'
     struk += garis + '\n'
     struk += `Buah  : ${nama_produk}\n`
     struk += `Berat : ${berat_kg.toFixed(3)} Kg\n`
@@ -48,7 +48,7 @@ async function triggerRawBTPrint(
     struk += garis + '\n'
     struk += `Total : ${formatRp(total_harga)}\n`
     struk += garis + '\n'
-    struk += '\n\n\n\n\n'
+    struk += '\n\n'
 
     window.location.href = `rawbt:${encodeURIComponent(struk)}`
 
