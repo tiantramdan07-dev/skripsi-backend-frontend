@@ -675,7 +675,7 @@ def build_escpos(nama_produk, berat_kg, harga_per_kg, total_harga, waktu, kasir=
     buf += (center("Terima Kasih!") + "\n").encode("ascii", errors="replace")
     buf += (center("PT Interskala Mandiri Indonesia") + "\n").encode("ascii", errors="replace")
     buf += b'\n\n\n\n\n\n'
-    buf += ESC + b'd' + bytes([8])   # dari 4 → 8
+    buf += ESC + b'd' + bytes([14])   # dari 8 → 14
     buf += GS + b'V' + bytes([0x41, 0x00])
     return bytes(buf)
 
