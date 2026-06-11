@@ -48,7 +48,7 @@ async function triggerRawBTPrint(
     struk += garis + '\n'
     struk += `Total : ${formatRp(total_harga)}\n`
     struk += garis + '\n'
-    struk += '\n\n'
+    struk += '\n\n\n\n\n'
 
     window.location.href = `rawbt:${encodeURIComponent(struk)}`
 
